@@ -1,0 +1,97 @@
+---
+mode: train
+model:
+  backbone: vit
+  classifier: mmil
+  initializer: null
+  compile: False
+  checkpoint: null
+  mmil:
+    size: [768, 512]
+    num_msg: 1
+    num_subbags: 16
+    mode: "random"
+    ape: True
+    num_layers: 2
+    multires_aggregation: concat
+
+
+trainer:
+  seed: 42
+  precision: 16
+  epochs: 50
+  batch_size: 1
+  accumulate_grad_batches: 32
+  persistent_workers: False
+  prefetch_factor: null
+  num_workers: 0
+  shuffle: True
+  check_val_every_n_epoch: 1
+  reload_dataloaders_every_n_epochs: 1
+  callbacks: True
+  sync_dist: False
+  optimizer: radam
+  lookahead: False
+  optimizer_params:
+    lr: 1.0e-04
+  lr_scheduler: cosineannealingwarmuprestarts
+  lr_scheduler_params:
+    first_cycle_steps: 250
+    cycle_mult: 1.0
+    max_lr: 1.0e-04
+    min_lr: 1.0e-05
+    warmup_steps: 0
+    gamma: 0.9
+  class_mode: binary
+  loss:
+  - ce
+  multi_loss_weights:
+  - 1.0
+  classes_loss_weights: null
+
+
+metrics:
+  mdmc_reduce_comment: "`global` or `samplewise`"
+  mdmc_reduce: global
+  threshold: null
+
+
+callbacks:
+  early_stopping: True
+  es_patience: 10
+  es_min_delta: 0.001
+  checkpoint_top_k: 5
+  stochastic_weight_averaging: False
+
+
+dataset:
+  mil: True
+  precomputed: True
+  num_tiles: -1
+  processing_batch_size: -1
+  train_folder: "/data/kfold"
+  val_folder: "/data/kfold"
+  test_folder: "/data/test"
+  data_cols:
+    features_target: 'embeddings_vit_target'
+    features_context: 'embeddings_vit_x10'
+    labels: 'grade_binary'
+  base_label: 0
+  classes:
+  - 0
+  - 1
+  target_names:
+  - Low
+  - High
+  num_classes: 2
+
+
+comet:
+  enable: False
+  api_key: API_KEY
+  project: PROJECT_NAME
+  workspace: WORKSPACE
+  experiment_key:
+telegram:
+  token: null
+  chat_id: null

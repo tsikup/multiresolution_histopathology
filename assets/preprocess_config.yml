@@ -1,0 +1,65 @@
+---
+preprocess:
+  batch_size: 32 # This is the batch size for the preprocessing dataloader.
+  num_workers: 4 # This is the number of workers for the preprocessing dataloader.
+  normalize: True # This is the normalization flag.
+  imagenet_norm: False # Utilize imagenet normalization.
+  stride_overlap_percentage: 0.0 # Overlap percentage between tiles.
+  intersection_percentage: 1.0 # Percentage of intersection between generated tiles and the annotation box.
+  tile_size: 384
+  ssl_ckpt_dir: "/backbone_models/" # Path to the pretrained backbone checkpoint directory.
+  embeddings_sizes:
+    vit: 384
+    resnet50: 2048
+  additional_pretrained_models:
+    densenet121_imagenet: 1024
+  spacing:
+    target: 0.5
+    context: 2.0
+    x10: 1.0
+  ratio: 2.0 # This ratio refers to the ratio of target_spacing / base_spacing. This ratio is variable for TCGA and should be changed accordingly, as base_spacing varies across TCGA slides.
+  include_mask: False
+  filters2apply:
+    pad: True
+    constant_pad_value: 230
+    tileSize: 384
+    blurriness_threshold:
+      target: 500
+      context: null
+      x10: null
+    keep_tile_percentage:
+      target: 0.5
+      context: null
+      x10: null
+    normalize_bluriness: True # Normalize the blurriness threshold based on the tissue percentage in the tile.
+    apply_mask: False
+    mask_background:
+    - 230
+    - 230
+    - 230
+    green: False # Preprocess green channel.
+    grays: False # Preprocess grays channel.
+    redPen: False # Preprocess red pen.
+    greenPen: False # Preprocess green pen.
+    bluePen: False # Preprocess blue pen.
+    remove_microtome_artifacts: False
+    remove_small_objects: False
+    stain_norm: True # Stain normalization flag.
+    stain_norm_mask: False
+    stain_norm_luminosity: True
+    stain_norm_method: vahadane
+    stain_norm_target: null
+    stain_norm_reference:
+      slide_level: "stain_vectors_slide_level_reference.csv"
+      dataset_level: "stain_vectors_dataset_level_reference.csv"
+    standardization_reference_dir: null
+    standardization_reference_file: null
+comet:
+  enable: False
+  api_key: API_KEY
+  project: PROJECT_NAME
+  workspace: WORKSPACE
+  experiment_key:
+telegram:
+  token: null
+  chat_id: null
