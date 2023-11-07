@@ -1,0 +1,7 @@
+.idea/
+.RData
+.Rhistory
+.DS_Store
+.ipynb_checkpoints/
+scp_results.py
+*_hidden
