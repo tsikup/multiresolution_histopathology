@@ -1,0 +1,17 @@
+model,val_dataset,method,mean
+clam,cohort_1,x10,0.8025833333333333
+clam,transneo,max,0.6684354838709677
+csmil,cohort_1,lse,0.702875
+csmil,transneo,max,0.6806612903225806
+dsmil,cohort_1,min,0.6987916666666667
+dsmil,transneo,max,0.687
+dtfd,cohort_1,x10,0.7160416666666667
+dtfd,transneo,concat,0.6933225806451613
+mamil,cohort_1,x10,0.7465416666666667
+mamil,transneo,concat,0.6945322580645161
+minet_ds,cohort_1,target,0.7608333333333333
+minet_ds,transneo,concat,0.6481290322580644
+mmil,cohort_1,max,0.7557916666666668
+mmil,transneo,target,0.6513709677419355
+transmil,cohort_1,x10,0.75625
+transmil,transneo,concat,0.6808387096774193

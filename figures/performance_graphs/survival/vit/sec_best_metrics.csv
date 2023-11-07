@@ -1,0 +1,9 @@
+model,val_dataset,method,mean
+clam,,mul,0.6659044585987262
+csmil,,concat,0.6107133757961783
+dsmil,,max,0.6670955414012739
+dtfd,,target,0.645828025477707
+mamil,,x10,0.6491464968152866
+minet_ds,,x10,0.6719808917197453
+mmil,,concat,0.655
+transmil,,target,0.6585987261146496
