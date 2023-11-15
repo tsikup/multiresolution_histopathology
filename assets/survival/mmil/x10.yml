@@ -79,7 +79,7 @@ dataset:
     # features_context: 'embeddings_vit_x10'
     # labels: 'tp53'
     survtime: "os_days"
-    censor: "os_censor"
+    censor: "os_status"
   base_label: 0
   classes:
   - 0
