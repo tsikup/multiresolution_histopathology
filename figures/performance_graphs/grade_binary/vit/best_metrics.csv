@@ -1,17 +1,19 @@
 model,val_dataset,method,mean
-clam,transneo,x10,0.709274193548387
-clam,cohort_1,min,0.8480416666666667
-csmil,transneo,x10,0.6816612903225806
-csmil,cohort_1,mul,0.758875
-dsmil,transneo,x10,0.7073709677419355
-dsmil,cohort_1,max,0.7659166666666667
-dtfd,transneo,x10,0.7029516129032258
-dtfd,cohort_1,concat,0.7675
-mamil,transneo,x10,0.7057258064516129
-mamil,cohort_1,concat,0.7711250000000001
-minet_ds,transneo,concat,0.6708064516129032
-minet_ds,cohort_1,concat,0.8520416666666668
-mmil,transneo,mul,0.7018225806451612
-mmil,cohort_1,concat,0.78025
-transmil,transneo,x10,0.7104838709677419
-transmil,cohort_1,concat,0.7532916666666667
+CLAM,Cohort 1,linear,0.8654999999999999
+CLAM,TransNEO,x10,0.709274193548387
+CLAM-Late,Cohort 1,linear,0.858625
+CLAM-Late,TransNEO,x10,0.7093709677419355
+CSMIL,Cohort 1,linear,0.7862083333333334
+CSMIL,TransNEO,x10,0.6816612903225806
+DSMIL,Cohort 1,max,0.7659166666666667
+DSMIL,TransNEO,x10,0.7073709677419355
+DTFD,Cohort 1,concat,0.7675
+DTFD,TransNEO,x10,0.7029516129032258
+MAMIL,Cohort 1,concat,0.7711250000000001
+MAMIL,TransNEO,x10,0.7057258064516129
+MINET-DS,Cohort 1,linear,0.8545416666666666
+MINET-DS,TransNEO,concat,0.6708064516129032
+MMIL,Cohort 1,concat,0.78025
+MMIL,TransNEO,mul,0.7018225806451612
+TransMIL,Cohort 1,linear,0.754375
+TransMIL,TransNEO,x10,0.7104838709677419

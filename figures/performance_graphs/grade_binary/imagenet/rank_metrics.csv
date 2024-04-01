@@ -1,129 +1,163 @@
-Unnamed: 0,model,val_dataset,method,mean
-0,dtfd,cohort_1,concat,1
-1,mamil,cohort_1,concat,1
-2,minet_ds,cohort_1,concat,1
-3,mmil,transneo,concat,1
-4,dtfd,transneo,concat,2
-5,mamil,transneo,concat,2
-6,minet_ds,transneo,concat,2
-7,transmil,transneo,concat,2
-8,clam,cohort_1,concat,3
-9,mmil,cohort_1,concat,3
-10,transmil,cohort_1,concat,3
-11,dsmil,transneo,concat,5
-12,csmil,cohort_1,concat,6
-13,csmil,transneo,concat,6
-14,clam,transneo,concat,7
-15,dsmil,cohort_1,concat,7
-16,dsmil,cohort_1,mean,1
-17,dsmil,transneo,mean,3
-18,csmil,cohort_1,mean,4
-19,mamil,cohort_1,mean,4
-20,minet_ds,cohort_1,mean,4
-21,minet_ds,transneo,mean,4
-22,csmil,transneo,mean,5
-23,dtfd,cohort_1,mean,5
-24,dtfd,transneo,mean,5
-25,mamil,transneo,mean,5
-26,transmil,transneo,mean,5
-27,clam,transneo,mean,6
-28,mmil,cohort_1,mean,6
-29,mmil,transneo,mean,6
-30,transmil,cohort_1,mean,6
-31,clam,cohort_1,mean,7
-32,clam,cohort_1,mul,1
-33,dsmil,cohort_1,mul,3
-34,mmil,transneo,mul,3
-35,clam,transneo,mul,5
-36,csmil,cohort_1,mul,7
-37,csmil,transneo,mul,7
-38,mamil,cohort_1,mul,7
-39,mamil,transneo,mul,7
-40,dsmil,transneo,mul,8
-41,dtfd,cohort_1,mul,8
-42,dtfd,transneo,mul,8
-43,minet_ds,cohort_1,mul,8
-44,minet_ds,transneo,mul,8
-45,mmil,cohort_1,mul,8
-46,transmil,cohort_1,mul,8
-47,transmil,transneo,mul,8
-48,clam,transneo,x20,1
-49,csmil,transneo,x20,1
-50,dsmil,transneo,x20,1
-51,dtfd,transneo,x20,1
-52,mamil,transneo,x20,1
-53,minet_ds,transneo,x20,1
-54,transmil,transneo,x20,1
-55,minet_ds,cohort_1,x20,2
-56,mmil,transneo,x20,2
-57,csmil,cohort_1,x20,3
-58,clam,cohort_1,x20,4
-59,dtfd,cohort_1,x20,4
-60,mamil,cohort_1,x20,5
-61,mmil,cohort_1,x20,7
-62,transmil,cohort_1,x20,7
-63,dsmil,cohort_1,x20,8
-64,csmil,cohort_1,lse,2
-65,clam,transneo,lse,3
-66,csmil,transneo,lse,3
-67,minet_ds,transneo,lse,3
-68,transmil,transneo,lse,3
-69,dsmil,transneo,lse,4
-70,dtfd,transneo,lse,4
-71,mamil,transneo,lse,4
-72,mmil,cohort_1,lse,4
-73,dsmil,cohort_1,lse,5
-74,minet_ds,cohort_1,lse,5
-75,mmil,transneo,lse,5
-76,transmil,cohort_1,lse,5
-77,dtfd,cohort_1,lse,7
-78,clam,cohort_1,lse,8
-79,mamil,cohort_1,lse,8
-80,csmil,cohort_1,max,1
-81,clam,transneo,max,2
-82,csmil,transneo,max,2
-83,dsmil,transneo,max,2
-84,mmil,cohort_1,max,2
-85,dtfd,transneo,max,3
-86,mamil,transneo,max,3
-87,mmil,transneo,max,4
-88,transmil,cohort_1,max,4
-89,transmil,transneo,max,4
-90,clam,cohort_1,max,6
-91,dsmil,cohort_1,max,6
-92,dtfd,cohort_1,max,6
-93,mamil,cohort_1,max,6
-94,minet_ds,transneo,max,6
-95,minet_ds,cohort_1,max,7
-96,mmil,cohort_1,x10,1
-97,clam,cohort_1,x10,2
-98,dtfd,cohort_1,x10,2
-99,mamil,cohort_1,x10,2
-100,transmil,cohort_1,x10,2
-101,minet_ds,cohort_1,x10,3
-102,dsmil,cohort_1,x10,4
-103,csmil,cohort_1,x10,5
-104,dsmil,transneo,x10,7
-105,dtfd,transneo,x10,7
-106,minet_ds,transneo,x10,7
-107,transmil,transneo,x10,7
-108,clam,transneo,x10,8
-109,csmil,transneo,x10,8
-110,mamil,transneo,x10,8
-111,mmil,transneo,x10,8
-112,transmil,cohort_1,min,1
-113,dsmil,cohort_1,min,2
-114,dtfd,cohort_1,min,3
-115,mamil,cohort_1,min,3
-116,clam,transneo,min,4
-117,csmil,transneo,min,4
-118,clam,cohort_1,min,5
-119,minet_ds,transneo,min,5
-120,mmil,cohort_1,min,5
-121,dsmil,transneo,min,6
-122,dtfd,transneo,min,6
-123,mamil,transneo,min,6
-124,minet_ds,cohort_1,min,6
-125,transmil,transneo,min,6
-126,mmil,transneo,min,7
-127,csmil,cohort_1,min,8
+,model,val_dataset,method,mean
+0,MMIL,TransNEO,concat,1
+1,DTFD,Cohort 1,concat,2
+2,DTFD,TransNEO,concat,2
+3,MAMIL,Cohort 1,concat,2
+4,MAMIL,TransNEO,concat,2
+5,MINET-DS,Cohort 1,concat,2
+6,MINET-DS,TransNEO,concat,2
+7,TransMIL,TransNEO,concat,2
+8,MMIL,Cohort 1,concat,3
+9,CLAM,Cohort 1,concat,4
+10,CLAM-Late,TransNEO,concat,4
+11,TransMIL,Cohort 1,concat,4
+12,DSMIL,TransNEO,concat,5
+13,CSMIL,Cohort 1,concat,7
+14,CSMIL,TransNEO,concat,7
+15,CLAM,TransNEO,concat,8
+16,CLAM-Late,Cohort 1,concat,8
+17,DSMIL,Cohort 1,concat,8
+18,DSMIL,Cohort 1,mean,2
+19,CLAM-Late,TransNEO,mean,3
+20,DSMIL,TransNEO,mean,3
+21,MINET-DS,TransNEO,mean,4
+22,CSMIL,Cohort 1,mean,5
+23,DTFD,TransNEO,mean,5
+24,MAMIL,Cohort 1,mean,5
+25,MINET-DS,Cohort 1,mean,5
+26,TransMIL,TransNEO,mean,5
+27,CLAM,TransNEO,mean,6
+28,CLAM-Late,Cohort 1,mean,6
+29,CSMIL,TransNEO,mean,6
+30,DTFD,Cohort 1,mean,6
+31,MAMIL,TransNEO,mean,6
+32,MMIL,Cohort 1,mean,7
+33,MMIL,TransNEO,mean,7
+34,TransMIL,Cohort 1,mean,7
+35,CLAM,Cohort 1,mean,8
+36,CLAM,Cohort 1,mul,1
+37,CLAM-Late,Cohort 1,mul,3
+38,DSMIL,Cohort 1,mul,4
+39,MMIL,TransNEO,mul,4
+40,CLAM,TransNEO,mul,5
+41,CLAM-Late,TransNEO,mul,6
+42,CSMIL,Cohort 1,mul,8
+43,CSMIL,TransNEO,mul,8
+44,MAMIL,Cohort 1,mul,8
+45,MAMIL,TransNEO,mul,8
+46,DSMIL,TransNEO,mul,9
+47,DTFD,Cohort 1,mul,9
+48,DTFD,TransNEO,mul,9
+49,MINET-DS,Cohort 1,mul,9
+50,MINET-DS,TransNEO,mul,9
+51,MMIL,Cohort 1,mul,9
+52,TransMIL,Cohort 1,mul,9
+53,TransMIL,TransNEO,mul,9
+54,CLAM,TransNEO,x20,1
+55,CLAM-Late,TransNEO,x20,1
+56,CSMIL,TransNEO,x20,1
+57,DSMIL,TransNEO,x20,1
+58,DTFD,TransNEO,x20,1
+59,MAMIL,TransNEO,x20,1
+60,MINET-DS,TransNEO,x20,1
+61,TransMIL,TransNEO,x20,1
+62,MINET-DS,Cohort 1,x20,3
+63,MMIL,TransNEO,x20,3
+64,CSMIL,Cohort 1,x20,4
+65,CLAM,Cohort 1,x20,5
+66,DTFD,Cohort 1,x20,5
+67,MAMIL,Cohort 1,x20,6
+68,MMIL,Cohort 1,x20,8
+69,TransMIL,Cohort 1,x20,8
+70,CLAM-Late,Cohort 1,x20,9
+71,DSMIL,Cohort 1,x20,9
+72,CSMIL,Cohort 1,linear,1
+73,DSMIL,Cohort 1,linear,1
+74,DTFD,Cohort 1,linear,1
+75,MAMIL,Cohort 1,linear,1
+76,MINET-DS,Cohort 1,linear,1
+77,TransMIL,Cohort 1,linear,1
+78,CLAM,Cohort 1,linear,2
+79,CSMIL,TransNEO,linear,2
+80,MMIL,TransNEO,linear,2
+81,CLAM-Late,Cohort 1,linear,4
+82,MAMIL,TransNEO,linear,5
+83,MMIL,Cohort 1,linear,5
+84,DSMIL,TransNEO,linear,6
+85,DTFD,TransNEO,linear,6
+86,MINET-DS,TransNEO,linear,6
+87,TransMIL,TransNEO,linear,6
+88,CLAM,TransNEO,linear,7
+89,CLAM-Late,TransNEO,linear,8
+90,CLAM-Late,Cohort 1,lse,2
+91,CLAM,TransNEO,lse,3
+92,CSMIL,Cohort 1,lse,3
+93,MINET-DS,TransNEO,lse,3
+94,TransMIL,TransNEO,lse,3
+95,CSMIL,TransNEO,lse,4
+96,DSMIL,TransNEO,lse,4
+97,DTFD,TransNEO,lse,4
+98,MAMIL,TransNEO,lse,4
+99,MMIL,Cohort 1,lse,4
+100,DSMIL,Cohort 1,lse,6
+101,MINET-DS,Cohort 1,lse,6
+102,MMIL,TransNEO,lse,6
+103,TransMIL,Cohort 1,lse,6
+104,CLAM-Late,TransNEO,lse,7
+105,DTFD,Cohort 1,lse,8
+106,CLAM,Cohort 1,lse,9
+107,MAMIL,Cohort 1,lse,9
+108,CLAM-Late,Cohort 1,max,1
+109,CLAM,TransNEO,max,2
+110,CSMIL,Cohort 1,max,2
+111,DSMIL,TransNEO,max,2
+112,MMIL,Cohort 1,max,2
+113,CSMIL,TransNEO,max,3
+114,DTFD,TransNEO,max,3
+115,MAMIL,TransNEO,max,3
+116,TransMIL,TransNEO,max,4
+117,CLAM-Late,TransNEO,max,5
+118,MMIL,TransNEO,max,5
+119,TransMIL,Cohort 1,max,5
+120,CLAM,Cohort 1,max,7
+121,DSMIL,Cohort 1,max,7
+122,DTFD,Cohort 1,max,7
+123,MAMIL,Cohort 1,max,7
+124,MINET-DS,TransNEO,max,7
+125,MINET-DS,Cohort 1,max,8
+126,MMIL,Cohort 1,x10,1
+127,CLAM,Cohort 1,x10,3
+128,DTFD,Cohort 1,x10,3
+129,MAMIL,Cohort 1,x10,3
+130,TransMIL,Cohort 1,x10,3
+131,MINET-DS,Cohort 1,x10,4
+132,DSMIL,Cohort 1,x10,5
+133,CSMIL,Cohort 1,x10,6
+134,CLAM-Late,Cohort 1,x10,7
+135,DSMIL,TransNEO,x10,8
+136,DTFD,TransNEO,x10,8
+137,MINET-DS,TransNEO,x10,8
+138,TransMIL,TransNEO,x10,8
+139,CLAM,TransNEO,x10,9
+140,CLAM-Late,TransNEO,x10,9
+141,CSMIL,TransNEO,x10,9
+142,MAMIL,TransNEO,x10,9
+143,MMIL,TransNEO,x10,9
+144,CLAM-Late,TransNEO,min,2
+145,TransMIL,Cohort 1,min,2
+146,DSMIL,Cohort 1,min,3
+147,CLAM,TransNEO,min,4
+148,DTFD,Cohort 1,min,4
+149,MAMIL,Cohort 1,min,4
+150,CLAM-Late,Cohort 1,min,5
+151,CSMIL,TransNEO,min,5
+152,MINET-DS,TransNEO,min,5
+153,CLAM,Cohort 1,min,6
+154,MMIL,Cohort 1,min,6
+155,DSMIL,TransNEO,min,7
+156,DTFD,TransNEO,min,7
+157,MAMIL,TransNEO,min,7
+158,MINET-DS,Cohort 1,min,7
+159,TransMIL,TransNEO,min,7
+160,MMIL,TransNEO,min,8
+161,CSMIL,Cohort 1,min,9
